@@ -1,0 +1,11 @@
+UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument
+
+pytorch升级导致不支持隐形维度
+
+改正方法：
+
+torch.nn.Softmax()
+||
+torch.nn.Softmax(dim = 0)
+
+
